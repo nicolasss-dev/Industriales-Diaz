@@ -1,0 +1,106 @@
+:root {
+    --primary-color: #f9f506;
+    --primary-dark: #FEC009;
+    --background-light: #f8f8f5;
+    --background-dark:#23220f;
+    --surface-light:#FFFFFF;
+    --surface-dark:#1E1E1E;
+    --text-main-light:#1A1A1A;
+    --text-main-dark:#E0E0E0;
+    --text-sub-light:#666666;
+    --text-sub-dark:#A0A0A0;
+    --font-family: 'Spline Sans', sans-serif;
+    --body: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--surface-light);
+    color: var(--font-color);
+    font-family: var(--body);
+    display: flex;
+    flex-direction: column;
+}
+
+body a {
+    text-decoration: none;
+}
+
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 0.1rem;
+    margin-top: 10px;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+header nav:first-child {
+    margin-left: 0;
+}
+header a {
+    text-decoration: none;
+    color: var(--text-sub-light);
+}
+
+header span a{
+    color: var(--text-main-light);
+    font-weight: bold;
+    border: 0.2rem solid var(--primary-color);
+
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 2rem 4rem;
+    background-color: var(--background-light);
+}
+
+.hero a {
+    color: var(--text-main-dark);
+    background-color: var(--surface-dark);
+    border: 0.2rem solid var(--surface-dark);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+}
+
+.hero-text h1 {
+    font-weight: bolder;
+    font-size: 3rem;
+    color: var(--text-main-light);
+}
+
+.hero-text h1 span {
+    color: var(--primary-dark);
+}
+
+section.soluciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+    gap: 2rem;
+}
+
+.mundos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.mundo-fisico {
+    padding: 1rem;
+    background: var(--background-light);
+}
+
+
+.mundo-digital {
+    padding: 1rem;
+    background: var(--background-dark);
+    color: var(--text-main-dark);
+
+}
